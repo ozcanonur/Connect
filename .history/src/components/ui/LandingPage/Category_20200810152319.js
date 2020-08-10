@@ -5,9 +5,6 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme) => {
   return {
-    button: {
-      ...theme.button,
-    },
     img: {
       width: '100%',
       height: '100%',
@@ -22,7 +19,7 @@ const Category = ({ btnText, imgSrc }) => {
   return (
     <Grid container direction='column' spacing={2}>
       <Grid item md>
-        <img className={classes.img} alt='Landing' src={imgSrc} />
+        <img className={theme.button} alt='Landing' src={imgSrc} />
       </Grid>
       <Grid item md style={{ textAlign: 'center' }}>
         <Button variant='contained' className={classes.button}>

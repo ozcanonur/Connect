@@ -22,7 +22,7 @@ const Category = ({ btnText, imgSrc }) => {
   return (
     <Grid container direction='column' spacing={2}>
       <Grid item md>
-        <img className={classes.img} alt='Landing' src={imgSrc} />
+        <img className={theme.button} alt='Landing' src={imgSrc} />
       </Grid>
       <Grid item md style={{ textAlign: 'center' }}>
         <Button variant='contained' className={classes.button}>

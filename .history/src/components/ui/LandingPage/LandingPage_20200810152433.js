@@ -50,11 +50,11 @@ const LandingPage = () => {
           <Grid item md>
             <Grid container direction='column' style={{ padding: '3em' }}>
               <Grid item>
-                <Typography variant='h2'>Bir cok ulkede egitim</Typography>
+                <Typography variant='h2'>Yurtdisina acilan kapiniz.</Typography>
               </Grid>
               <Grid item style={{ marginTop: '1em' }}>
                 <Button variant='contained' className={classes.button}>
-                  Calistigimiz Ulkeler
+                  Vizyonumuz
                 </Button>
               </Grid>
             </Grid>

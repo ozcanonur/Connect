@@ -1,22 +1,10 @@
 import React from 'react';
 
-import { Grid, Typography, Button } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 import LandingCategories from './LandingCategories';
 
-import { makeStyles } from '@material-ui/styles';
-
-const useStyles = makeStyles((theme) => {
-  return {
-    button: {
-      ...theme.button,
-    },
-  };
-});
-
 const LandingPage = () => {
-  const classes = useStyles();
-
   return (
     <Grid container direction='column'>
       <Grid item md>
@@ -48,22 +36,13 @@ const LandingPage = () => {
       <Grid item md>
         <Grid container direction='row'>
           <Grid item md>
-            <Grid container direction='column' style={{ padding: '3em' }}>
-              <Grid item>
-                <Typography variant='h2'>Bir cok ulkede egitim</Typography>
-              </Grid>
-              <Grid item style={{ marginTop: '1em' }}>
-                <Button variant='contained' className={classes.button}>
-                  Calistigimiz Ulkeler
-                </Button>
-              </Grid>
-            </Grid>
+            Bir cok ulkede egitim
           </Grid>
           <Grid item md>
             <img
               style={{
                 width: '100%',
-                height: '30em',
+                height: '50em',
                 objectFit: 'cover',
               }}
               alt='Landing'
