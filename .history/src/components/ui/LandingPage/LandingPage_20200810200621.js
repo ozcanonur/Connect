@@ -92,7 +92,7 @@ const LandingPage = () => {
                 objectFit: 'cover',
               }}
               alt='Landing'
-              src={require('../../../assets/Iletisim.jpg')}
+              src={require('../../../assets/Toronto.jpg')}
             />
           </Grid>
           <Grid item md>

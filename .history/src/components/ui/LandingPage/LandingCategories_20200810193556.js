@@ -5,8 +5,6 @@ import { makeStyles } from '@material-ui/styles';
 
 import Category from './Category';
 
-import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-
 const useStyles = makeStyles((theme) => {
   return {
     button: {
@@ -60,7 +58,6 @@ const LandingCategories = () => {
           <Grid item style={{ marginTop: '1em' }}>
             <Button variant='contained' className={classes.button}>
               Vizyonumuz
-              <ArrowRightAltIcon />
             </Button>
           </Grid>
         </Grid>

@@ -82,34 +82,6 @@ const LandingPage = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item md>
-        <Grid container direction='row' alignItems='stretch'>
-          <Grid item md>
-            <img
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-              alt='Landing'
-              src={require('../../../assets/Iletisim.jpg')}
-            />
-          </Grid>
-          <Grid item md>
-            <Grid container direction='column' style={{ padding: '3em' }}>
-              <Grid item>
-                <Typography variant='h2'>Dil egitimine ilk adiminizi bizimle atin.</Typography>
-              </Grid>
-              <Grid item style={{ marginTop: '1em' }}>
-                <Button variant='contained' className={classes.button}>
-                  Iletisim
-                  <ArrowRightAltIcon />
-                </Button>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
     </Grid>
   );
 };

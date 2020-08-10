@@ -24,7 +24,7 @@ const LandingPage = () => {
   const classes = useStyles();
 
   return (
-    <Grid container direction='column'>
+    <Grid container direction='column' spacing={3}>
       <Grid item md>
         <Parallax bgImage={require('../../../assets/LandingTop.jpg')} strength={400}>
           <div style={{ height: '40em' }} />

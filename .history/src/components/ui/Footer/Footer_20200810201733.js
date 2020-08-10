@@ -20,7 +20,7 @@ const Footer = () => {
   const classes = useStyles();
 
   return (
-    <footer style={{ marginTop: '0.7em' }}>
+    <footer>
       <Grid container direction='column' spacing={3} style={{ backgroundColor: 'black' }}>
         <Grid item md style={{ textAlign: 'center' }}>
           <Facebook

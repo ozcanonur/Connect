@@ -20,8 +20,12 @@ const Footer = () => {
   const classes = useStyles();
 
   return (
-    <footer style={{ marginTop: '0.7em' }}>
-      <Grid container direction='column' spacing={3} style={{ backgroundColor: 'black' }}>
+    <footer>
+      <Grid
+        container
+        direction='column'
+        spacing={3}
+        style={{ marginTop: '0.01em', backgroundColor: 'black' }}>
         <Grid item md style={{ textAlign: 'center' }}>
           <Facebook
             htmlColor='#3b5998'
@@ -34,7 +38,7 @@ const Footer = () => {
           <Grid item md>
             <Grid container direction='column' justify='center' alignItems='center' spacing={3}>
               <Grid item md>
-                <div className={classes.button}>Whatsapp QR</div>
+                <div className={classes.button}>Whatsapp</div>
               </Grid>
               <Grid item md>
                 <img
