@@ -157,23 +157,24 @@ const Header = (props) => {
   };
 
   const menuOptions = [
-    { name: 'Yaz Okullari', link: '/yazOkullari', activeIndex: 1, selectedIndex: 0 },
+    { name: 'Programlar', link: '/programlar', activeIndex: 1, selectedIndex: 0 },
+    { name: 'Yaz Okullari', link: '/yazOkullari', activeIndex: 1, selectedIndex: 1 },
     {
       name: 'Dil Okullari',
       link: '/dilOkullari',
       activeIndex: 1,
-      selectedIndex: 1,
+      selectedIndex: 2,
     },
     {
       name: '50+ Programlar',
       link: '/50plusProgramlar',
       activeIndex: 1,
-      selectedIndex: 2,
+      selectedIndex: 3,
     },
-    { name: 'CELTA', link: '/celta', activeIndex: 1, selectedIndex: 3 },
-    { name: 'Lise Degisim', link: '/liseDegisim', activeIndex: 1, selectedIndex: 4 },
-    { name: 'Lisans', link: '/lisans', activeIndex: 1, selectedIndex: 5 },
-    { name: 'Lisansustu', link: '/lisansustu', activeIndex: 1, selectedIndex: 6 },
+    { name: 'CELTA', link: '/celta', activeIndex: 1, selectedIndex: 4 },
+    { name: 'Lise Degisim', link: '/liseDegisim', activeIndex: 1, selectedIndex: 5 },
+    { name: 'Lisans', link: '/lisans', activeIndex: 1, selectedIndex: 6 },
+    { name: 'Lisansustu', link: '/lisansustu', activeIndex: 1, selectedIndex: 7 },
   ];
 
   const routes = [
@@ -258,7 +259,7 @@ const Header = (props) => {
         MenuListProps={{ onMouseLeave: handleClose }}
         elevation={0}
         keepMounted
-        style={{ zIndex: '5000', marginTop: '3em' }}>
+        style={{ zIndex: '5000' }}>
         {/* Create a new menuItem for each option (services, customsoftware etc.) */}
         {menuOptions.map((option, i) => (
           <MenuItem

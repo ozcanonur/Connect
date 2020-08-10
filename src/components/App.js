@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from '@material-ui/styles';
 
+import LandingPage from './ui/LandingPage/LandingPage';
 import Header from './ui/Header/Header';
 import theme from './ui/Theme';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -22,7 +23,7 @@ const App = () => {
         />
         {/* Conditional showing of content depending on the current URL */}
         <Switch>
-          <Route exact path='/' render={(props) => <div>'/'</div>} />
+          <Route exact path='/' render={(props) => <LandingPage />} />
           <Route exact path='/programlar' render={(props) => <div>programlar</div>} />
           <Route exact path='/ulkeler' render={(props) => <div>ulkeler</div>} />
           <Route exact path='/galeri' component={() => <div>galeri</div>} />

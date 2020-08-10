@@ -3,10 +3,13 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const arcBlue = '#0B72B9';
 const arcOrange = '#FFBA60';
 const arcGrey = '#868686';
+const gray = '#807f80';
 
 export default createMuiTheme({
+  shadows: ['none'],
   palette: {
     common: {
+      gray: `${gray}`,
       blue: `${arcBlue}`,
       orange: `${arcOrange}`,
     },
@@ -37,8 +40,9 @@ export default createMuiTheme({
       fontFamily: 'Raleway',
       fontWeight: 700,
       fontSize: '2.5rem',
-      color: `${arcBlue}`,
+      color: `black`,
       lineHeight: 1.5,
+      opacity: 0.7,
     },
     h3: {
       fontFamily: 'Pacifico',
