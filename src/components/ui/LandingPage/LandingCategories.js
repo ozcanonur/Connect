@@ -51,7 +51,7 @@ const LandingCategories = () => {
   ];
 
   return (
-    <Grid container direction='column' style={{ paddingBottom: '3em' }}>
+    <Grid container direction='column'>
       <Grid item md style={{ textAlign: 'center' }}>
         <Grid container direction='column' style={{ padding: '3em' }}>
           <Grid item>
@@ -65,8 +65,8 @@ const LandingCategories = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item md style={{ padding: '0.5em' }}>
-        <Grid container direction='row' justify='space-evenly' spacing={2}>
+      <Grid item md>
+        <Grid container direction='row' style={{ backgroundColor: 'black' }}>
           {firstRow.map(({ imgSrc, btnText }, key) => (
             <Grid item md key={key}>
               <Category imgSrc={imgSrc} btnText={btnText} />
@@ -74,8 +74,8 @@ const LandingCategories = () => {
           ))}
         </Grid>
       </Grid>
-      <Grid item md style={{ padding: '0.5em' }}>
-        <Grid container direction='row' justify='space-evenly' spacing={2}>
+      <Grid item md>
+        <Grid container direction='row' style={{ backgroundColor: 'black' }}>
           {secondRow.map(({ imgSrc, btnText }, key) => (
             <Grid item md key={key}>
               <Category imgSrc={imgSrc} btnText={btnText} />
@@ -83,8 +83,8 @@ const LandingCategories = () => {
           ))}
         </Grid>
       </Grid>
-      <Grid item md style={{ padding: '0.5em' }}>
-        <Grid container direction='row' justify='space-evenly' spacing={2}>
+      <Grid item md>
+        <Grid container direction='row' style={{ backgroundColor: 'black' }}>
           {thirdRow.map(({ imgSrc, btnText }, key) => (
             <Grid item md key={key}>
               <Category imgSrc={imgSrc} btnText={btnText} />

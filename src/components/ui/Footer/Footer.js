@@ -20,9 +20,9 @@ const Footer = () => {
   const classes = useStyles();
 
   return (
-    <footer style={{ marginTop: '0.7em' }}>
-      <Grid container direction='column' spacing={3} style={{ backgroundColor: 'black' }}>
-        <Grid item md style={{ textAlign: 'center' }}>
+    <footer>
+      <Grid container direction='column' style={{ backgroundColor: 'black' }}>
+        <Grid item md style={{ textAlign: 'center', marginTop: '1em' }}>
           <Facebook
             htmlColor='#3b5998'
             fontSize='large'
@@ -32,15 +32,15 @@ const Footer = () => {
         </Grid>
         <Grid container direction='row'>
           <Grid item md>
-            <Grid container direction='column' justify='center' alignItems='center' spacing={3}>
+            <Grid container direction='column' justify='center' alignItems='center'>
               <Grid item md>
                 <div className={classes.button}>Whatsapp QR</div>
               </Grid>
-              <Grid item md>
+              <Grid item md style={{ marginTop: '1em' }}>
                 <img
                   style={{
                     width: '100%',
-                    height: '8.5em',
+                    height: '11em',
                     objectFit: 'contain',
                   }}
                   alt='Landing'
@@ -50,19 +50,19 @@ const Footer = () => {
             </Grid>
           </Grid>
           <Grid item md>
-            <Grid container direction='column' justify='center' alignItems='center' spacing={3}>
+            <Grid container direction='column' justify='center' alignItems='center'>
               <Grid item md>
                 <Button variant='contained' className={classes.button}>
                   Bizimle calismak ister misiniz?
                   <ArrowRightAltIcon />
                 </Button>
               </Grid>
-              <Grid item md>
+              <Grid item md style={{ marginTop: '1em' }}>
                 <Grid container direction='row'>
-                  <Grid item md style={{ marginRight: '6.5em' }}>
+                  <Grid item md style={{ marginRight: '1.5em' }}>
                     <img
                       style={{
-                        height: '8.5em',
+                        height: '11em',
                         objectFit: 'cover',
                       }}
                       alt='Landing'
@@ -72,7 +72,7 @@ const Footer = () => {
                   <Grid item md>
                     <img
                       style={{
-                        height: '8.5em',
+                        height: '11em',
                         objectFit: 'cover',
                       }}
                       alt='Landing'

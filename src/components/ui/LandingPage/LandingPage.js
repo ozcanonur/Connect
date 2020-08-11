@@ -14,8 +14,17 @@ const useStyles = makeStyles((theme) => {
     },
     altButton: {
       ...theme.button,
-      backgroundColor: 'black',
+      backgroundColor: 'white',
+      color: 'black',
+      height: '6em',
+      width: '30em',
+      opacity: '0.8',
+    },
+    h2: {
+      ...theme.h2,
+      fontSize: '4rem',
       color: 'white',
+      opacity: '1',
     },
   };
 });
@@ -35,10 +44,13 @@ const LandingPage = () => {
       </Grid>
       <Grid item md style={{ position: 'relative' }}>
         <Parallax bgImage={require('../../../assets/LandingBottomOne.jpg')} strength={400}>
-          <div style={{ height: '30em' }}>
-            <Grid container direction='column' style={{ position: 'absolute', padding: '3em' }}>
+          <div style={{ height: '50em' }}>
+            <Grid
+              container
+              direction='column'
+              style={{ position: 'absolute', padding: '15em 3em 3em 15em' }}>
               <Grid item>
-                <Typography variant='h2' style={{ color: 'white', opacity: '1' }}>
+                <Typography variant='h2' className={classes.h2}>
                   Bugunun ogrencileri.
                   <br />
                   Yarinin liderleri.
@@ -54,61 +66,56 @@ const LandingPage = () => {
           </div>
         </Parallax>
       </Grid>
-      <Grid item md>
-        <Grid container direction='row' alignItems='stretch'>
-          <Grid item md>
-            <Grid container direction='column' style={{ padding: '3em' }}>
+      <Grid item md style={{ position: 'relative' }}>
+        <Parallax bgImage={require('../../../assets/Toronto.jpg')} strength={400}>
+          <div style={{ height: '50em' }}>
+            <Grid
+              container
+              direction='column'
+              style={{ position: 'absolute', padding: '15em 15em 3em 3em' }}
+              alignItems='flex-end'>
               <Grid item>
-                <Typography variant='h2'>Bir cok ulkede egitim</Typography>
+                <Typography variant='h2' className={classes.h2}>
+                  Bir cok ulkede egitim.
+                </Typography>
               </Grid>
               <Grid item style={{ marginTop: '1em' }}>
-                <Button variant='contained' className={classes.button}>
+                <Button variant='contained' className={classes.altButton}>
                   Calistigimiz Ulkeler
                   <ArrowRightAltIcon />
                 </Button>
               </Grid>
             </Grid>
-          </Grid>
-          <Grid item md>
-            <img
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-              alt='Landing'
-              src={require('../../../assets/Toronto.jpg')}
-            />
-          </Grid>
-        </Grid>
+          </div>
+        </Parallax>
       </Grid>
-      <Grid item md>
-        <Grid container direction='row' alignItems='stretch'>
-          <Grid item md>
-            <img
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-              alt='Landing'
-              src={require('../../../assets/Iletisim.jpg')}
-            />
-          </Grid>
-          <Grid item md>
-            <Grid container direction='column' style={{ padding: '3em' }}>
+      <Grid item md style={{ position: 'relative' }}>
+        <Parallax bgImage={require('../../../assets/LandingCathedral.jpg')} strength={400}>
+          <div style={{ height: '50em' }}>
+            <Grid
+              container
+              direction='column'
+              style={{ position: 'absolute', padding: '15em 3em 3em 15em' }}>
               <Grid item>
-                <Typography variant='h2'>Dil egitimine ilk adiminizi bizimle atin.</Typography>
+                <Typography variant='h2' className={classes.h2} style={{ color: 'black' }}>
+                  Ilk adiminizi bizimle atin.
+                </Typography>
               </Grid>
               <Grid item style={{ marginTop: '1em' }}>
-                <Button variant='contained' className={classes.button}>
+                <Button
+                  variant='contained'
+                  className={classes.altButton}
+                  style={{
+                    backgroundColor: 'black',
+                    color: 'white',
+                  }}>
                   Iletisim
                   <ArrowRightAltIcon />
                 </Button>
               </Grid>
             </Grid>
-          </Grid>
-        </Grid>
+          </div>
+        </Parallax>
       </Grid>
     </Grid>
   );
