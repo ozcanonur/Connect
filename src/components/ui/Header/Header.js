@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => {
       '&:hover': {
         backgroundColor: 'transparent',
       },
+      paddingLeft: '10em',
     },
     tabContainer: {
       marginLeft: 'auto',

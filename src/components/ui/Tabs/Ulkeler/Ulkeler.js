@@ -42,9 +42,6 @@ const Ulke = ({ title, text, imgs }) => {
 const Ulkeler = () => {
   return (
     <div style={{ padding: '10em', paddingTop: '5em' }}>
-      <Typography variant='h1' style={{ textAlign: 'center', paddingBottom: '1em' }}>
-        Ulkeler
-      </Typography>
       <Grid container direction='column' spacing={5}>
         {items.map((item, key) => {
           return (

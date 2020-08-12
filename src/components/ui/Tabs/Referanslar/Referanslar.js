@@ -26,9 +26,6 @@ const Referans = ({ title, img, paragraphs }) => {
 const Referanslar = () => {
   return (
     <div style={{ padding: '10em', paddingTop: '5em' }}>
-      <Typography variant='h1' style={{ textAlign: 'center', paddingBottom: '1em' }}>
-        Referanslar
-      </Typography>
       <Grid container direction='column' spacing={7}>
         {Items.map((item, key) => {
           return (

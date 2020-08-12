@@ -11,6 +11,7 @@ import Iletisim from './ui/Tabs/Iletisim/Iletisim';
 
 import theme from './ui/Theme';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ScrollIntoView from './ScrollIntoView';
 
 const App = () => {
   // Track index of selected menu item
@@ -28,15 +29,17 @@ const App = () => {
           setSelectedIndex={setSelectedIndex}
         />
         {/* Conditional showing of content depending on the current URL */}
-        <Switch>
-          <Route exact path='/' render={(props) => <LandingPage />} />
-          <Route exact path='/programlar' render={(props) => <div>programlar</div>} />
-          <Route exact path='/ulkeler' render={(props) => <Ulkeler />} />
-          <Route exact path='/galeri' component={() => <div>galeri</div>} />
-          <Route exact path='/referanslar' component={() => <Referanslar />} />
-          <Route exact path='/hakkimizda' component={() => <Hakkimizda />} />
-          <Route exact path='/iletisim' component={() => <Iletisim />} />
-        </Switch>
+        <ScrollIntoView>
+          <Switch>
+            <Route exact path='/' render={() => <LandingPage />} />
+            <Route exact path='/programlar' render={(props) => <div>programlar</div>} />
+            <Route exact path='/ulkeler' render={() => <Ulkeler />} />
+            <Route exact path='/galeri' component={() => <div>galeri</div>} />
+            <Route exact path='/referanslar' component={() => <Referanslar />} />
+            <Route exact path='/hakkimizda' component={() => <Hakkimizda />} />
+            <Route exact path='/iletisim' component={() => <Iletisim />} />
+          </Switch>
+        </ScrollIntoView>
         <Footer />
       </BrowserRouter>
     </ThemeProvider>

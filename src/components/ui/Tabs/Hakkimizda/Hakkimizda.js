@@ -29,7 +29,7 @@ const Hakkimizda = () => {
   ];
 
   return (
-    <div style={{ padding: '10em' }}>
+    <div style={{ padding: '10em', paddingTop: '5em' }}>
       <Grid container direction='column'>
         <Grid item md>
           <Grid container direction='row' spacing={5}>
@@ -84,9 +84,9 @@ const Hakkimizda = () => {
           </Typography>
           <br />
           <List>
-            {bottomListTexts.map((text) => {
+            {bottomListTexts.map((text, key) => {
               return (
-                <ListItem>
+                <ListItem key={key}>
                   <ListItemIcon>
                     <ArrowForwardIosIcon />
                   </ListItemIcon>
