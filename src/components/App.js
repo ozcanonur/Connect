@@ -7,6 +7,7 @@ import Header from './ui/Header/Header';
 import Ulkeler from './ui/Tabs/Ulkeler/Ulkeler';
 import Hakkimizda from './ui/Tabs/Hakkimizda/Hakkimizda';
 import Referanslar from './ui/Tabs/Referanslar/Referanslar';
+import Iletisim from './ui/Tabs/Iletisim/Iletisim';
 
 import theme from './ui/Theme';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -34,7 +35,7 @@ const App = () => {
           <Route exact path='/galeri' component={() => <div>galeri</div>} />
           <Route exact path='/referanslar' component={() => <Referanslar />} />
           <Route exact path='/hakkimizda' component={() => <Hakkimizda />} />
-          <Route exact path='/iletisim' component={() => <div>iletisim</div>} />
+          <Route exact path='/iletisim' component={() => <Iletisim />} />
         </Switch>
         <Footer />
       </BrowserRouter>
