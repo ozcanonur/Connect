@@ -4,6 +4,9 @@ import { ThemeProvider } from '@material-ui/styles';
 import LandingPage from './ui/LandingPage/LandingPage';
 import Footer from './ui/Footer/Footer';
 import Header from './ui/Header/Header';
+import Ulkeler from './ui/Tabs/Ulkeler/Ulkeler';
+import Hakkimizda from './ui/Tabs/Hakkimizda/Hakkimizda';
+
 import theme from './ui/Theme';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -26,10 +29,10 @@ const App = () => {
         <Switch>
           <Route exact path='/' render={(props) => <LandingPage />} />
           <Route exact path='/programlar' render={(props) => <div>programlar</div>} />
-          <Route exact path='/ulkeler' render={(props) => <div>ulkeler</div>} />
+          <Route exact path='/ulkeler' render={(props) => <Ulkeler />} />
           <Route exact path='/galeri' component={() => <div>galeri</div>} />
           <Route exact path='/referanslar' component={() => <div>referanslar</div>} />
-          <Route exact path='/hakkimizda' component={() => <div>hakkimizda</div>} />
+          <Route exact path='/hakkimizda' component={() => <Hakkimizda />} />
           <Route exact path='/iletisim' component={() => <div>iletisim</div>} />
         </Switch>
         <Footer />

@@ -57,7 +57,7 @@ export default createMuiTheme({
     h3: {
       fontFamily: 'Pacifico',
       fontSize: '2.5rem',
-      color: `${arcBlue}`,
+      color: `black`,
     },
     h4: {
       fontFamily: 'Raleway',
@@ -77,7 +77,7 @@ export default createMuiTheme({
     },
     body1: {
       fontSize: '1.25rem',
-      color: arcGrey,
+      color: gray,
       fontWeight: 300,
     },
     learnButton: {

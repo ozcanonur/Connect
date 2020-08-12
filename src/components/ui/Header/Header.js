@@ -178,19 +178,20 @@ const Header = (props) => {
   ];
 
   const routes = [
+    { name: 'Ana Sayfa', link: '/', activeIndex: 0 },
     {
       name: 'Programlar',
       link: '/programlar',
-      activeIndex: 0,
+      activeIndex: 1,
       ariaOwns: anchorEl ? 'simple-menu' : undefined,
       ariaPopup: anchorEl ? 'true' : undefined,
       mouseOver: (event) => handleClick(event),
     },
-    { name: 'Ulkeler', link: '/ulkeler', activeIndex: 1 },
-    { name: 'Galeri', link: '/galeri', activeIndex: 2 },
-    { name: 'Referanslar', link: '/referanslar', activeIndex: 3 },
-    { name: 'Hakkimizda', link: '/hakkimizda', activeIndex: 4 },
-    { name: 'Iletisim', link: '/iletisim', activeIndex: 5 },
+    { name: 'Ulkeler', link: '/ulkeler', activeIndex: 2 },
+    { name: 'Galeri', link: '/galeri', activeIndex: 3 },
+    { name: 'Referanslar', link: '/referanslar', activeIndex: 4 },
+    { name: 'Hakkimizda', link: '/hakkimizda', activeIndex: 5 },
+    { name: 'Iletisim', link: '/iletisim', activeIndex: 6 },
   ];
 
   // Page refresh fix
