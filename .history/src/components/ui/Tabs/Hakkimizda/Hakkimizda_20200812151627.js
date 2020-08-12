@@ -79,6 +79,7 @@ const Hakkimizda = () => {
           <Typography variant='h3'>
             “Dünyaya açılan pencereniz olmak, başarımızın göstergesidir.”
           </Typography>
+
           <Typography variant='body1' style={{ marginTop: '7em' }}>
             Danışmanlık hizmetlerimizin kapsamı:
           </Typography>

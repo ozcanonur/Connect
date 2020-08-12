@@ -82,7 +82,6 @@ const Hakkimizda = () => {
           <Typography variant='body1' style={{ marginTop: '7em' }}>
             Danışmanlık hizmetlerimizin kapsamı:
           </Typography>
-          <br />
           <List>
             {bottomListTexts.map((text) => {
               return (

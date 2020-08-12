@@ -32,7 +32,7 @@ const App = () => {
           <Route exact path='/programlar' render={(props) => <div>programlar</div>} />
           <Route exact path='/ulkeler' render={(props) => <Ulkeler />} />
           <Route exact path='/galeri' component={() => <div>galeri</div>} />
-          <Route exact path='/referanslar' component={() => <Referanslar />} />
+          <Route exact path='/referanslar' component={() => <Referanslar /> />
           <Route exact path='/hakkimizda' component={() => <Hakkimizda />} />
           <Route exact path='/iletisim' component={() => <div>iletisim</div>} />
         </Switch>

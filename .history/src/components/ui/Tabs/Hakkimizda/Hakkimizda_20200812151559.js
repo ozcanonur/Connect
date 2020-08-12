@@ -32,7 +32,7 @@ const Hakkimizda = () => {
     <div style={{ padding: '10em' }}>
       <Grid container direction='column'>
         <Grid item md>
-          <Grid container direction='row' spacing={5}>
+          <Grid container direction='row' spacing={10}>
             <Grid item xs={8}>
               <Typography variant='h3' style={{ paddingBottom: '1em' }}>
                 Yepyeni dünyalara ilk adım bizimle.
@@ -82,7 +82,6 @@ const Hakkimizda = () => {
           <Typography variant='body1' style={{ marginTop: '7em' }}>
             Danışmanlık hizmetlerimizin kapsamı:
           </Typography>
-          <br />
           <List>
             {bottomListTexts.map((text) => {
               return (
