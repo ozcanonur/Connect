@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => {
       '&:hover': {
         backgroundColor: 'transparent',
       },
-      paddingLeft: '10em',
+      paddingLeft: '5em',
     },
     tabContainer: {
       marginLeft: 'auto',
@@ -74,16 +74,16 @@ const useStyles = makeStyles((theme) => {
       },
     },
     menu: {
-      backgroundColor: '#000000',
+      background: 'rgba(0,0,0,0.75)',
       color: 'white',
       borderRadius: 0,
       '& .MuiListItemText-root': {
         zIndex: 50000,
       },
+      marginTop: '3em',
     },
     menuItem: {
       ...theme.typography.tab,
-      opacity: 0.7,
       '&:hover': {
         opacity: 1,
       },
@@ -158,7 +158,6 @@ const Header = (props) => {
   };
 
   const menuOptions = [
-    { name: 'Programlar', link: '/programlar', activeIndex: 1, selectedIndex: 0 },
     { name: 'Yaz Okullari', link: '/yazOkullari', activeIndex: 1, selectedIndex: 1 },
     {
       name: 'Dil Okullari',
