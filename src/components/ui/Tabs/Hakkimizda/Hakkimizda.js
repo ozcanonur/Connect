@@ -104,15 +104,6 @@ const Hakkimizda = () => {
             Aynur Elvan Özcan
           </Typography>
           <Typography variant='body1'>Kurucu, Ingilizce Ogretmeni</Typography>
-          <img
-            style={{
-              height: '10em',
-              width: '20em',
-              marginTop: '1em',
-            }}
-            alt='Aynur signature'
-            src={require('./aynur_signature.jpg')}
-          />
         </Grid>
       </Grid>
     </div>

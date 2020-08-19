@@ -102,7 +102,7 @@ const LandingPage = () => {
         </Parallax>
       </Grid>
       <Grid item md>
-        <Grid container direction='row' justify='center'>
+        <Grid container direction='row' justify='center' style={{ padding: '5em 10em 5em 10em' }}>
           <Grid item md style={{ padding: '3em' }}>
             <CategoryCard />
           </Grid>
@@ -144,7 +144,7 @@ const LandingPage = () => {
         </Parallax>
       </Grid>
       <Grid item md>
-        <Grid container direction='row' justify='center'>
+        <Grid container direction='row' justify='center' style={{ padding: '5em 10em 5em 10em' }}>
           <Grid item md style={{ padding: '3em' }}>
             <CategoryCard />
           </Grid>
